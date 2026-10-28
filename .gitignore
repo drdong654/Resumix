@@ -2,3 +2,6 @@ __pycache__/
 *.py[cod]
 .DS_Store
 output/
+node_modules/
+dist/
+.astro/

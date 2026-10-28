@@ -1,0 +1,351 @@
+%-------------------------
+% Resume — Ivan Vanichkin
+% Python Backend Developer
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+%----------PAGE STYLE----------
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%----------MARGINS----------
+
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{0.75in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.1in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------SECTIONS----------
+
+\titleformat{\section}
+  {\vspace{-4pt}\scshape\raggedright\large}
+  {}{0em}{}
+  [\color{black}\titlerule \vspace{-5pt}]
+
+%----------CUSTOM COMMANDS----------
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \if\relax\detokenize{#1}\relax
+      #2
+    \else
+      \textbf{#1}: #2
+    \fi
+    \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}
+    {l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0pt,label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=18pt]
+}
+
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}
+}
+
+%===========================================
+% DOCUMENT
+%===========================================
+
+\begin{document}
+
+%===========================================
+% HEADING
+%===========================================
+
+\noindent
+\parbox[t]{\linewidth}{
+    \vspace{3pt}
+
+    {\Large \textbf{Иван Ваничкин}}
+    \hfill
+    \href{mailto:drdong654@gmail.com}
+    {drdong654@gmail.com}
+    \\[4pt]
+
+    {\textbf{Junior Python Backend Developer}}
+    \hfill
+    +7~905~796~43~20
+    \\[4pt]
+
+    \href{https://github.com/drdong654}
+    {github.com/drdong654}
+    \hfill
+    \href{https://t.me/VanichkinIM}
+    {Telegram: @VanichkinIM}
+}
+
+\vspace{4pt}
+
+%===========================================
+% ABOUT
+%===========================================
+
+\section{О себе}
+
+\small{
+Junior Python Backend Developer с коммерческим опытом разработки
+backend-сервисов и Telegram-приложений.
+Переквалифицировался в Python backend-разработку через
+профильные курсы, самостоятельную практику и коммерческую разработку.
+Работаю с Python, FastAPI, PostgreSQL, SQLAlchemy,
+asyncio и Docker. Проектирую бизнес-логику,
+REST API и слой работы с данными, пишу автоматические тесты.
+Имею практический опыт разработки RAG-систем
+и интеграции LLM в backend-приложения.
+}
+
+%===========================================
+% EXPERIENCE
+%===========================================
+
+\section{Опыт работы}
+
+\resumeSubHeadingListStart
+
+%----------VILDLY----------
+
+\resumeSubheading
+  {\Large Vildly}
+  {\textbf{Python-разработчик}}
+  {Backend-разработка}
+  {Апрель 2026 --- настоящее время}
+
+\vspace{7pt}
+
+\textbf{Стек:}
+Python, FastAPI, Aiogram 3, PostgreSQL, SQLAlchemy,
+asyncpg, Docker, pytest, Git, RAG, pgvector
+
+\vspace{3pt}
+
+\resumeItemListStart
+
+\resumeItem{}
+{Разрабатываю backend-логику продукта на Python,
+включая пользовательские сценарии, обработку данных
+и взаимодействие компонентов приложения}
+
+\resumeItem{}
+{Разрабатываю REST API на FastAPI с разделением
+API-слоя, бизнес-логики и слоя доступа к данным}
+
+\resumeItem{}
+{Работаю с PostgreSQL, SQLAlchemy и асинхронным
+доступом к данным через asyncpg}
+
+\resumeItem{}
+{Реализовал регистрацию и авторизацию пользователей,
+профили, валидацию входных данных и обработку ошибок}
+
+\resumeItem{}
+{Разрабатываю Telegram-интерфейс на Aiogram 3
+и FSM-сценарии с интеграцией в backend приложения}
+
+\resumeItem{}
+{Работаю над RAG-системой и векторным поиском
+по базе знаний с использованием PostgreSQL и pgvector}
+
+\resumeItem{}
+{Пишу unit- и integration-тесты на pytest,
+контейнеризирую сервисы с Docker и работаю
+с Git/GitHub в командном процессе разработки}
+
+\resumeItemListEnd
+
+\vspace{3pt}
+
+\textbf{Результаты:}
+
+\resumeItemListStart
+
+\resumeItem{}
+{Перевёл хранение пользовательских данных
+с файлового прототипа на PostgreSQL}
+
+\resumeItem{}
+{Разделил Telegram-интерфейс, бизнес-логику
+и слой доступа к данным}
+
+\resumeItem{}
+{Реализовал основные сценарии регистрации,
+авторизации и управления пользовательским профилем}
+
+\resumeItem{}
+{Подготовил архитектурную основу для интеграции
+RAG-поиска по базе знаний}
+
+\resumeItemListEnd
+
+%----------UPRAVA----------
+
+\vspace{6pt}
+
+\resumeSubheading
+  {\Large Управа района Текстильщики}
+  {\textbf{Ведущий специалист}}
+  {Автоматизация внутренних процессов; совмещение}
+  {Июль 2025 --- Июнь 2026}
+
+\vspace{4pt}
+
+\resumeItemListStart
+
+\resumeItem{}
+{Разрабатывал Telegram-ботов для автоматизации рекрутмента
+и взаимодействия с участниками районных проектов}
+
+\resumeItem{}
+{Писал скрипты для обработки, структурирования и выгрузки
+данных из БД, ускоряя анализ больших массивов рабочих данных}
+
+\resumeItem{}
+{Работал с корпоративными информационными системами
+и внедрял цифровые инструменты во внутренние процессы}
+
+\resumeItem{}
+{Дорабатывал вёрстку сайта, обновлял контент
+и контролировал актуальность публикуемой информации}
+
+\resumeItemListEnd
+
+\vspace{2pt}
+
+\textbf{Результаты:}
+
+\resumeItemListStart
+
+\resumeItem{}
+{Внедрил Telegram-ботов в реальные рабочие процессы
+для автоматизации отдельных этапов рекрутмента}
+
+\resumeItem{}
+{Ускорил подготовку данных для анализа за счёт скриптов
+обработки и выгрузки информации из БД}
+
+\resumeItem{}
+{Перевыполнил план по рекрутменту актива района --- более 100\%}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%===========================================
+% HARD SKILLS
+%===========================================
+
+\section{Технические навыки}
+
+\resumeItemListStart
+
+\resumeItem{Backend}
+{Python, FastAPI, Aiogram 3, asyncio, REST API, ООП}
+
+\resumeItem{Databases}
+{PostgreSQL, SQL, SQLAlchemy, asyncpg, pgvector}
+
+\resumeItem{Testing}
+{pytest, pytest-asyncio, unit testing,
+integration testing, отладка}
+
+\resumeItem{AI / RAG}
+{RAG, LLM, Ollama, embeddings, vector search}
+
+\resumeItem{Tools}
+{Git, GitHub, Docker, Linux, Ruff, uv}
+
+\resumeItemListEnd
+
+%===========================================
+% EDUCATION
+%===========================================
+
+\section{Образование}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Реклама и связи с общественностью}
+  {Российский новый университет}
+  {Магистратура}
+  {2025 --- 2027}
+
+\vspace{2pt}
+
+\resumeSubheading
+  {Государственное и муниципальное управление}
+  {Российский новый университет}
+  {Бакалавриат}
+  {2020 --- 2025}
+
+\resumeSubHeadingListEnd
+
+%===========================================
+% ADDITIONAL EDUCATION
+%===========================================
+
+\section{Сертификаты и дополнительное обучение}
+
+\resumeItemListStart
+
+\resumeItem{Нетология, 2026}
+{Курс «Основы Python: создаём телеграм-бота».
+Сертификат № PYFREE-ASYNC-10158846; обучение в рамках
+профессиональной переквалификации в Python backend-разработку}
+
+\resumeItemListEnd
+
+%===========================================
+% LANGUAGES
+%===========================================
+
+\vspace{2pt}
+
+\textbf{Языки:}
+Русский --- родной, Английский --- B1
+
+%===========================================
+
+\end{document}
